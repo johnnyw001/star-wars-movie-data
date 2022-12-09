@@ -1,0 +1,98 @@
+/* Style Reset Section */
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul,
+nav ol {
+    list-style-type: none;
+}
+
+/* Header and Navigation */
+body {
+    font-family: 'Poller One', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    background-image: url(./images/background.png);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poller One', cursive;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #FFE81F;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #FFE81F;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+nav {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#mainnav ul li {
+    display: block;
+    text-decoration: none;
+    background-image: url(./images/background.png);
+    color: #FFE81F;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+/* Card Section */
+
+main {
+    padding: 1rem;
+}
+
+article {
+    background-image: url(./images/background.png);
+    border: 1px solid #FFE81F;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+
+/* Media Queries Section */
+
+@media only screen and (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
